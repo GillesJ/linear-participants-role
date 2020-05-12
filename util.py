@@ -25,10 +25,10 @@ def send_text_message(msg):
     from twilio.rest import Client
 
     # Find these values at https://twilio.com/user/account
-    account_sid = "ACa76273a676bd69b1652f50efad8324f5"
-    auth_token = "4771316e5ebfa7601301bbe483fc26c4"
-    to_number = "+32472627204"
-    from_number = "+32460202906"
+    account_sid = "XXXXX"
+    auth_token = "XXXX"
+    to_number = "XXXXX"
+    from_number = "XXXXX"
     client = Client(account_sid, auth_token)
 
     message = client.api.account.messages.create(
